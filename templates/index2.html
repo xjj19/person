@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style>
+        /* 设置页面的基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* 个人信息部分 */
+        .intro {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        /* 右上角的照片样式 */
+        .intro img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 3px solid #fff; /* 给照片加个边框 */
+        }
+
+        .intro h1 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+
+        .intro p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* 网格布局，每行显示两张图片 */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 每行2列 */
+            gap: 20px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* 图片容器样式 */
+        .image-item {
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /* 图片的样式 */
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        /* 图片点击时的放大效果 */
+        .image-item img:hover {
+            transform: scale(1.05);
+        }
+
+        /* 弹窗容器，默认隐藏 */
+        .modal {
+            display: none; /* 隐藏弹窗 */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        /* 弹窗的图片 */
+        .modal img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+        }
+
+        /* 弹窗的介绍文本 */
+        .modal .description {
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        /* 关闭按钮样式 */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 自我介绍部分 -->
+    <div class="intro">
+        <!-- 照片放在右上角 -->
+        <img src="your-photo.jpg" alt="个人照片"> <!-- 这里是你的照片 -->
+        <h1>你好，我是 Sathi</h1>
+        <p>欢迎来到我的个人主页！我是一个充满创意和活力的人，热衷于探索新事物，并乐于分享我的经历和作品。在这里，你将看到我最喜欢的图片和一些有趣的内容，希望你能喜欢！</p>
+    </div>
+
+    <!-- 图片展示区域 -->
+    <div class="image-gallery">
+        <!-- 每张图片和介绍文本 -->
+        <div class="image-item" onclick="openModal('image1.jpg', '图片1的介绍文本')">
+            <img src="image1.jpg" alt="图片1">
+        </div>
+
+        <div class="image-item" onclick="openModal('image2.jpg', '图片2的介绍文本')">
+            <img src="image2.jpg" alt="图片2">
+        </div>
+
+        <div class="image-item" onclick="openModal('image3.jpg', '图片3的介绍文本')">
+            <img src="image3.jpg" alt="图片3">
+        </div>
+
+        <div class="image-item" onclick="openModal('image4.jpg', '图片4的介绍文本')">
+            <img src="image4.jpg" alt="图片4">
+        </div>
+
+        <div class="image-item" onclick="openModal('image5.jpg', '图片5的介绍文本')">
+            <img src="image5.jpg" alt="图片5">
+        </div>
+
+        <div class="image-item" onclick="openModal('image6.jpg', '图片6的介绍文本')">
+            <img src="image6.jpg" alt="图片6">
+        </div>
+
+        <div class="image-item" onclick="openModal('image7.jpg', '图片7的介绍文本')">
+            <img src="image7.jpg" alt="图片7">
+        </div>
+
+        <div class="image-item" onclick="openModal('image8.jpg', '图片8的介绍文本')">
+            <img src="image8.jpg" alt="图片8">
+        </div>
+
+        <div class="image-item" onclick="openModal('image9.jpg', '图片9的介绍文本')">
+            <img src="image9.jpg" alt="图片9">
+        </div>
+
+        <div class="image-item" onclick="openModal('image10.jpg', '图片10的介绍文本')">
+            <img src="image10.jpg" alt="图片10">
+        </div>
+    </div>
+
+    <!-- 弹窗 -->
+    <div class="modal" id="imageModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="放大图片">
+        <div class="description" id="modalDescription"></div>
+    </div>
+
+    <script>
+        // 打开弹窗显示图片和描述
+        function openModal(imageSrc, description) {
+            document.getElementById('imageModal').style.display = 'flex';
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('modalDescription').innerText = description;
+        }
+
+        // 关闭弹窗
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
