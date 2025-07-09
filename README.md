@@ -27,11 +27,12 @@
 
 
 ![](static/image8.jpg)
+
 流片过程中典型工艺设备。光刻、薄膜、刻蚀等机台
 
 
 ![](static/image9.jpg)
-发表在顶级期刊advaned materila上的场效应晶体管研究,系本团队本领域的第一篇研究。
+发表在顶级期刊advaned materila上的场效应晶体管研究,系本团队该领域的第一篇研究工作。
 
 
 ![](static/image10.jpg)
