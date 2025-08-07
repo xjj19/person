@@ -9,7 +9,6 @@
 [5]"柔性场效应管及其制备方法."CN119521716A.2025-02-25.(第一完成人)
 论文：
 Junjie Xiong, et al. “Enhanced Electrical Interfaces in Flexible 2D Material Transistors via Liquid Metal and Ionic Liquid Injection.” Advanced Materials (2025): 2501501. (第一完成人)
-<img width="2903" height="441" alt="image" src="https://github.com/user-attachments/assets/f991051e-f815-45b1-9556-18be6b2f5dab" />
 
 
 
