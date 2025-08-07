@@ -1,7 +1,11 @@
 欢迎来到我的个人主页！我是一个充满创意和活力的人，热衷于探索新事物，并乐于分享我的经历和作品。
 我来自清华大学机械系,预计26年6月博士毕业。
 
+论文：
+
+Junjie Xiong, et al. “Enhanced Electrical Interfaces in Flexible 2D Material Transistors via Liquid Metal and Ionic Liquid Injection.” Advanced Materials (2025): 2501501. (第一完成人)
 专利：
+
 [1]"石英晶振传感器."CN116592992A.2023-08-15. （第一完成人）
 
 [2]"真空扫描探针显微镜."CN116660581A.2023-08-29. （第一完成人）
@@ -12,9 +16,11 @@
 
 [5]"柔性场效应管及其制备方法."CN119521716A.2025-02-25.(第一完成人)
 
-论文：
-Junjie Xiong, et al. “Enhanced Electrical Interfaces in Flexible 2D Material Transistors via Liquid Metal and Ionic Liquid Injection.” Advanced Materials (2025): 2501501. (第一完成人)
 
+
+
+
+<img width="2903" height="441" alt="image" src="https://github.com/user-attachments/assets/6630f5a8-80f0-42de-891a-42ce053e4572" />
 
 
 以下是对个人求职简历的补充：
