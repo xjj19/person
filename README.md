@@ -3,10 +3,15 @@
 
 专利：
 [1]"石英晶振传感器."CN116592992A.2023-08-15. （第一完成人）
+
 [2]"真空扫描探针显微镜."CN116660581A.2023-08-29. （第一完成人）
+
 [3]"测量方法、装置、计算机设备和存储介质."CN116678343A.2023-09-01.(第一完成人）
+
 [4]“形貌测量方法及微纳结构测量系统.”CN116697946A.2023-09-05.（学生第一完成人）
+
 [5]"柔性场效应管及其制备方法."CN119521716A.2025-02-25.(第一完成人)
+
 论文：
 Junjie Xiong, et al. “Enhanced Electrical Interfaces in Flexible 2D Material Transistors via Liquid Metal and Ionic Liquid Injection.” Advanced Materials (2025): 2501501. (第一完成人)
 
